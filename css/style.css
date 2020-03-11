@@ -1,14 +1,7 @@
 /* MOBILE FIRST */
 html {
-  box-sizing: border-box;
   font-size: 15px;
   text-align: center;
-}
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
 }
 
 h1 {
@@ -54,6 +47,15 @@ header > .title-container {
   padding: 20px;
 }
 
+picture > .responsive-image {
+  width: 100%;
+}
+
+header > picture > .responsive-image,
+aside > picture > .responsive-image {
+  max-width: 640px;
+}
+
 .article-section {
   background: #434343;
   grid-area: articles;
@@ -63,29 +65,13 @@ article {
   margin: 3%;
 }
 
-aside {
-  grid-area: aside;
-}
-
-footer {
-  grid-area: footer;
-}
-
-.responsive-image {
-  width: 100%;
-}
-
-header > picture > .responsive-image,
-aside > picture > .responsive-image {
-  max-width: 640px;
-}
-
 article > picture > .responsive-image {
   max-width: 540px;
   border: 10px solid #707070;
 }
 
 aside {
+  grid-area: aside;
   background: #707070;
 }
 
@@ -104,6 +90,7 @@ aside > article > p:nth-of-type(3) {
 }
 
 footer {
+  grid-area: footer;
   background: #434343;
 }
 
