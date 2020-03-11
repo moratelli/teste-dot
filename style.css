@@ -47,6 +47,26 @@ html {
   box-sizing: inherit;
 }
 
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.25rem;
+  padding: 2%;
+}
+
+p {
+  padding: 2%;
+}
+
 .wrapper {
   display: grid;
   font-family: Arial, Helvetica, sans-serif;
@@ -66,43 +86,23 @@ header {
 header > .title-container {
   background: #434343;
   text-align: center;
-  padding: 4% 10%;
-}
-
-header > .title-container > h1 {
-  font-weight: bold;
-  font-size: 2rem;
+  padding: 20px;
 }
 
 .article-section {
-  background: #fcf; /* #434343; */
+  background: #434343;
   grid-area: articles;
-  color: black;
 }
 
 article {
   margin: 3%;
-  background: #cff;
-}
-
-article > h3 {
-  font-weight: bold;
-  font-size: 1.25rem;
-  padding: 2%;
-}
-
-article > p {
-  padding: 1%;
 }
 
 aside {
-  background: #fcc;
   grid-area: aside;
-  color: black;
 }
 
 footer {
-  background: #cfc;
   grid-area: footer;
 }
 
@@ -120,20 +120,25 @@ article > .responsive-image {
   border: 10px solid #707070;
 }
 
-aside > h1 {
+aside {
+  background: #707070;
+}
+
+aside > article > h1 {
   position: relative;
-  top: -40px;
-  margin-bottom: -30px;
+  top: -80px;
+  margin-bottom: -40px;
+}
+
+aside > article > p:nth-of-type(2) {
   font-weight: bold;
-  font-size: 2rem;
+}
+
+aside > article > p:nth-of-type(3) {
+  font-style: italic;
 }
 
 footer {
-  padding: 7%;
+  padding: 20px;
   background: #434343;
-}
-
-footer > h3 {
-  font-weight: bold;
-  font-size: 1.5rem;
 }
