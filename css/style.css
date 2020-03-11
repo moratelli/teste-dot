@@ -104,8 +104,11 @@ aside > article > p:nth-of-type(3) {
 }
 
 footer {
-  padding: 20px;
   background: #434343;
+}
+
+footer > h3 {
+  padding: 20px;
 }
 
 /* DESKTOP */
@@ -140,5 +143,35 @@ footer {
 
   .article-section > article {
     flex: 0 0 30%;
+  }
+
+  aside {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+  }
+
+  aside > picture {
+    flex: 0 0 46%;
+  }
+
+  aside > picture > .responsive-image {
+    border: 10px solid #434343;
+    border-radius: 50%;
+    max-height: 350px;
+    max-width: 350px;
+  }
+
+  aside > article {
+    flex: 0 0 46%;
+    text-align: left;
+  }
+
+  aside > article > h1 {
+    top: 0px;
+    margin-bottom: 0px;
+    padding: 2%;
   }
 }
