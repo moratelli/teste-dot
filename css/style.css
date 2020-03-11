@@ -132,17 +132,19 @@ footer > h3 {
   header > .title-container > p {
     color: #213800;
     font-weight: bold;
+    padding: 1%;
   }
 
   .article-section {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    padding: 0 3%;
+    padding: 2%;
   }
 
   .article-section > article {
     flex: 0 0 30%;
+    margin: 1%;
   }
 
   aside {
