@@ -1,0 +1,75 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* CSS DA PAGINA */
+html {
+  box-sizing: border-box;
+}
+
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+.wrapper {
+	display: grid;
+	font-family: sans-serif;
+	width: 100%;
+	background-color: #fff;
+	display: grid;
+}
+
+.header {
+	background: #ffc;
+}
+
+.article-section {
+	background: #fcf;
+}
+
+article {
+	background: #cff
+}
+
+aside {
+	background: #fcc;
+}
+
+footer {
+	background: #cfc
+}
+
+.responsive-image {
+	width: 100%;
+	max-width: 320px;
+}
+
+header > .responsive-image {
+	max-width: 320px;
+}
+
+article > .responsive-image {
+	
+}
